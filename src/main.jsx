@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Fruits from './Components/Fruits'
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 import Dairy from './Components/Dairy'
 import SeaFood from './Components/SeaFood'
@@ -20,7 +20,7 @@ import Login from './Components/Login'
 
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <CartProvider>
