@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Customer1 from '../assets/images/Customer1.jpg'
-import Customer2 from '../assets/images/Customer2.jpg'
-import Customer3 from '../assets/images/Customer3.jpg'
-import Customer4 from '../assets/images/Customer4.jpg'
-import Customer5 from '../assets/images/Customer5.jpg'
+import Customer1 from '../assets/images/customer1.jpg'
+import Customer2 from '../assets/images/customer2.jpg'
+import Customer3 from '../assets/images/customer3.jpg'
+import Customer4 from '../assets/images/customer4.jpg'
+import Customer5 from '../assets/images/customer5.jpg'
 import { FaStar } from 'react-icons/fa';
 
 
