@@ -1,7 +1,7 @@
 import './App.css'
 import Hero from './Components/Hero'
 import Category from './Components/Category'
-import Values from './Components/values'
+import Values from './Components/Values'
 import Products from './Components/Products'
 import Discount from './Components/Discount'
 import Process from './Components/Process'
