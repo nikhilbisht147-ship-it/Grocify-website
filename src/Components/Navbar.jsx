@@ -9,6 +9,7 @@ import { useCart } from './Both';
 import Button from './Button'
 
 
+
 const Navbar = () => {
 
     const [showmenu, setShowMenu] = useState(false)

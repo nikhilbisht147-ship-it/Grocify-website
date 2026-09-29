@@ -9,8 +9,6 @@ import Customer from './Components/Customer'
 
 
 
-
-
 function App() {
   
 
