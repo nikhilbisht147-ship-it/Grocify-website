@@ -17,6 +17,7 @@ import Wishlist from './Components/Heart'
 import { CartProvider } from './Components/Both'
 import Cart from './Components/AddToCart'
 import Login from './Components/Login'
+import Register from './Components/Register'
 
 
 
@@ -77,6 +78,10 @@ const router = createHashRouter([
         path: "/login",
         element: <Login/>,
       },
+      {
+        path: '/register',
+        element: <Register/>,
+      }
     ]
   },
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaUnlockAlt } from "react-icons/fa";
 import { 
   MdPhoneInTalk, 
   MdOutlineEmail, 
@@ -36,8 +37,8 @@ const Contact = () => {
       icon: MdPhoneInTalk,
       title: "Call Direct",
       desc: "Instant live help with orders",
-      action: "+1 (800) 555-4433",
-      href: "tel:18005554433",
+      action: "+91 9999999999",
+      href: "tel:",
       accent: "bg-emerald-50 text-emerald-600 border-emerald-100"
     },
     {
@@ -82,10 +83,10 @@ const Contact = () => {
                 <span>24/7 Grocify Customer Care</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-5xl/15 font-extrabold text-slate-800 tracking-tight leading-tight">
                 We are here to help <br />
-                <span className="text-orange-500 underline decoration-orange-300 decoration-wavy decoration-2">
-                  fresh every day.
+                <span className="text-orange-500 ">
+                  fresh every day
                 </span>
               </h1>
 
@@ -136,7 +137,7 @@ const Contact = () => {
                 <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl border mb-4 group-hover:scale-110 transition-transform ${item.accent}`}>
                   <Icon />
                 </div>
-                <h3 className="font-bold text-slate-900 text-base">{item.title}</h3>
+                <h3 className="font-bold text-slate-800 text-base">{item.title}</h3>
                 <p className="text-xs text-slate-500 mt-1 mb-3">{item.desc}</p>
                 <span className="text-sm font-semibold text-orange-600 group-hover:underline flex items-center gap-1">
                   {item.action} &rarr;
@@ -157,7 +158,7 @@ const Contact = () => {
               <span className="text-orange-600 font-bold uppercase tracking-widest text-xs">
                 Direct Inquiry
               </span>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-800 mt-2 tracking-tight">
                 Send us a message, we'll sort it out.
               </h2>
               <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -167,7 +168,7 @@ const Contact = () => {
 
             {/* Quick Micro FAQ */}
             <div className="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm space-y-5">
-              <h4 className="font-bold text-slate-900 text-lg flex items-center gap-2">
+              <h4 className="font-bold text-slate-800 text-lg flex items-center gap-2">
                 <IoChatbubblesOutline className="text-orange-500 text-xl" />
                 Frequently Asked
               </h4>
@@ -231,7 +232,7 @@ const Contact = () => {
                       <input
                         type="text"
                         required
-                        placeholder="Sarah Jenkins"
+                        placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-sm focus:bg-white focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
@@ -245,7 +246,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="tel"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder=""
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-sm focus:bg-white focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
@@ -262,7 +263,7 @@ const Contact = () => {
                       <input
                         type="email"
                         required
-                        placeholder="sarah@example.com"
+                        placeholder="your@gmail.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-sm focus:bg-white focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
@@ -311,8 +312,8 @@ const Contact = () => {
                     <IoSend className="text-sm" />
                   </button>
 
-                  <p className="text-center text-xs text-slate-400 mt-2">
-                    🔒 We protect your data. No spam, ever.
+                  <p className="text-center text-xs  text-slate-400 mt-2">
+                    <span className=' flex gap-3 items-center justify-center'><FaUnlockAlt className='text-slate-600 text-md'/> We protect your data. No spam, ever.</span>
                   </p>
                 </form>
               )}

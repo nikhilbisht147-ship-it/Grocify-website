@@ -28,7 +28,7 @@ const Services = () => {
     {
       icon: MdOutlineElectricBolt,
       tag: "Express Logistics",
-      title: "15–30 Min Fast Delivery",
+      title: "15-30 Min Fast Delivery",
       description: "Smart micro-fulfillment centers stationed across town ensure your milk, greens, and eggs reach your kitchen while still farm fresh.",
       badge: "Fastest",
       color: "from-amber-500/10 to-orange-500/10",
@@ -123,10 +123,10 @@ const Services = () => {
                 <span>Modern Delivery & Supply Chain</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl lg:text-5xl/15 font-black text-slate-900 tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-5xl/15 font-extrabold text-slate-800 tracking-tight leading-tight">
                 Services built for a{' '}
                 <span className="text-orange-500 ">
-                  healthier kitchen.
+                  healthier kitchen
                 </span>
               </h1>
 
@@ -158,7 +158,7 @@ const Services = () => {
                 <img
                   src={img8}
                   alt="Grocify Service Overview"
-                  className="w-full h-auto max-h-[360px] md:max-h-[420px] object-contain drop-shadow-xl hover:scale-105 transition-transform duration-500"
+                  className="w-full h-auto max-h-[360px] md:max-h-[600px] object-contain drop-shadow-xl hover:scale-105 transition-transform duration-500" 
                 />
               </div>
             </div>
@@ -174,7 +174,7 @@ const Services = () => {
           <span className="text-orange-600 font-bold uppercase tracking-widest text-xs">
             What We Do
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-800 mt-2 tracking-tight">
             Comprehensive Grocery Solutions
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base">
@@ -187,12 +187,12 @@ const Services = () => {
             const Icon = service.icon;
             return (
               <div
-                key={index}
+                key={index} 
                 className={`bg-white rounded-3xl p-7 border ${service.border} shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className={`w-14 h-14 rounded-2xl ${service.iconColor} flex items-center justify-center text-2xl shadow-sm group-hover:scale-110 transition-transform`}>
+                    <div className={`w-14 h-14 rounded-2xl ${service.iconColor} flex items-center justify-center text-2xl shadow-sm group-hover:scale-110 transition-transform`}> 
                       <Icon />
                     </div>
                     <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
@@ -203,7 +203,7 @@ const Services = () => {
                   <span className="text-[11px] font-bold tracking-wider uppercase text-slate-400">
                     {service.tag}
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mt-1 mb-3">
+                  <h3 className="text-xl font-bold text-slate-800 mt-1 mb-3">
                     {service.title}
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed">

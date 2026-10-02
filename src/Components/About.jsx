@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { GiMapleLeaf } from "react-icons/gi";
+import { BsFillLightningFill } from "react-icons/bs";
 import { 
   MdOutlineElectricBolt, 
   MdSlowMotionVideo 
@@ -19,8 +21,6 @@ import {
   TbHeartHandshake 
 } from "react-icons/tb";
 import { HiOutlineUserGroup } from "react-icons/hi2";
-
-import img3 from '../assets/images/img3.png';
 import img5 from '../assets/images/img5.jpg';
 import img6 from '../assets/images/img6.avif';
 import img16 from '../assets/images/img16.png';
@@ -90,7 +90,7 @@ const About = () => {
                 <span>Rethinking Daily Groceries for Everyone</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-5xl/15 font-black tracking-tight leading-[1.15] text-slate-900">
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl/15 font-extrabold tracking-tight leading-[1.15] text-slate-800">
                 Fresh groceries, delivered{' '}
                 <span className="bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-600 bg-clip-text text-transparent">
                   faster than ever.
@@ -126,7 +126,7 @@ const About = () => {
                 {/* Floating pill 1 */}
                 <div className="absolute -top-4 -left-4 sm:-left-6 z-20 bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 animate-bounce [animation-duration:3s]">
                   <div className="w-9 h-9 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold">
-                    🌿
+                  <GiMapleLeaf />
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-medium">100% Organic</p>
@@ -147,7 +147,7 @@ const About = () => {
                 {/* Floating pill 2 */}
                 <div className="absolute -bottom-5 -right-4 sm:-right-6 z-20 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-xl">
-                    ⚡
+                  <BsFillLightningFill /> 
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-medium">Instant Dispatch</p>
@@ -173,7 +173,7 @@ const About = () => {
                   <div className="w-12 h-12 mb-3 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center text-2xl shadow-inner">
                     <Icon />
                   </div>
-                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">
+                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-800 tracking-tight">
                     {stat.value}
                   </span>
                   <span className="text-xs sm:text-sm font-medium text-slate-500 mt-1">
@@ -230,13 +230,13 @@ const About = () => {
               <span className="text-orange-600 font-bold uppercase tracking-widest text-xs">
                 Our Genesis
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mt-2 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-800 mt-2 tracking-tight">
                 No wilted leaves. No expired milk. Only pure freshness.
               </h2>
               
               <div className="mt-6 space-y-4 text-slate-600 text-base leading-relaxed">
                 <p>
-                  We started <strong className="text-slate-900 font-semibold">Grocify</strong> because we were tired of grocery deliveries showing up bruised, thawed, or hours late. We believed everyday kitchen essentials deserve the same precision logistics as luxury goods.
+                  We started <strong className="text-slate-800 text-xl font-bold">Grocify</strong> because we were tired of grocery deliveries showing up bruised, thawed, or hours late. We believed everyday kitchen essentials deserve the same precision logistics as luxury goods.
                 </p>
                 <p>
                   By partnering directly with trusted growers and modernizing micro-fulfillment hubs across neighborhoods, we cut the time it takes an apple to go from the orchard tree to your crisper drawer down to just 24 hours.
@@ -245,17 +245,17 @@ const About = () => {
 
               <div className="mt-8 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-6">
                 <div>
-                  <h4 className="text-xl font-black text-slate-900">4.9 / 5</h4>
+                  <h4 className="text-xl font-black text-slate-800">4.9 / 5</h4>
                   <p className="text-xs text-slate-500 font-medium">Customer Rating</p>
                 </div>
                 <div className="h-8 w-px bg-slate-200" />
                 <div>
-                  <h4 className="text-xl font-black text-slate-900">100k+</h4>
+                  <h4 className="text-xl font-black text-slate-800">100k+</h4>
                   <p className="text-xs text-slate-500 font-medium">Delivered Orders</p>
                 </div>
                 <div className="h-8 w-px bg-slate-200" />
                 <div>
-                  <h4 className="text-xl font-black text-slate-900">100%</h4>
+                  <h4 className="text-xl font-black text-slate-800">100%</h4>
                   <p className="text-xs text-slate-500 font-medium">Recyclable Bags</p>
                 </div>
               </div>
@@ -274,7 +274,7 @@ const About = () => {
             <span className="text-orange-600 font-bold uppercase tracking-widest text-xs">
               Why Customers Love Us
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-black text-slate-800 mt-2 tracking-tight">
               A grocery service designed around honesty
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base">
@@ -297,7 +297,7 @@ const About = () => {
                     <span className="text-[11px] font-bold tracking-wider uppercase text-slate-400">
                       {v.tag}
                     </span>
-                    <h3 className="text-lg font-bold text-slate-900 mt-1 mb-2">
+                    <h3 className="text-lg font-bold text-slate-800 mt-1 mb-2">
                       {v.title}
                     </h3>
                     <p className="text-sm text-slate-600 leading-relaxed">
