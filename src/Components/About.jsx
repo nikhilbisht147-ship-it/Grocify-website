@@ -90,7 +90,7 @@ const About = () => {
                 <span>Rethinking Daily Groceries for Everyone</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-slate-900">
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl/15 font-black tracking-tight leading-[1.15] text-slate-900">
                 Fresh groceries, delivered{' '}
                 <span className="bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-600 bg-clip-text text-transparent">
                   faster than ever.

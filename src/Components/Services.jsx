@@ -123,9 +123,9 @@ const Services = () => {
                 <span>Modern Delivery & Supply Chain</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-5xl/15 font-black text-slate-900 tracking-tight leading-tight">
                 Services built for a{' '}
-                <span className="text-orange-500 underline decoration-orange-300 decoration-wavy decoration-2">
+                <span className="text-orange-500 ">
                   healthier kitchen.
                 </span>
               </h1>
